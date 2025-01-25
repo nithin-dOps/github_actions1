@@ -21,6 +21,10 @@ jobs:
       - name: Run tests
         run: |
           pytest github_actions1/file_test.py
+          
+      - name: Debug file structure
+        run: |
+          ls -R
 
       - name: Run flake8
         uses: py-actions/flake8@v2
