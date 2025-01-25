@@ -17,14 +17,15 @@ jobs:
         run: |
           pip install pytest
           pip install flake8
-      
-      - name: Debug file structure
-        run: |
-          pwd
-          ls -R
+
       - name: Run tests
         run: |
           pytest .
           
+      - name: Debug file structure
+        run: |
+          pwd
+          ls -R
+
       - name: Run flake8
         uses: py-actions/flake8@v2
